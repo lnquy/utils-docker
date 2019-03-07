@@ -54,6 +54,8 @@ env_vars_in_file () {
   IFS='
 '
   set -f
+  
+  id
 
   for ENV_VAR in `env | grep "^${PREFIX}"`; do
 
